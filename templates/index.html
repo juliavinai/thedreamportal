@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Dream Reflection{% endblock %} {%
+block content %}
+
+<form id="dreamform" method="POST">
+  <div class="textarea-wrapper">
+    <textarea
+      id="dream_text"
+      name="dream_text"
+      rows="8"
+      placeholder=""
+    ></textarea>
+
+    <span class="custom-placeholder">
+      speak thy dream into this chamber…<br />
+      but know, I am simply a looking-glass.
+    </span>
+  </div>
+
+  <button type="submit" id="analyzeBtn">enter 𓉸 here</button>
+</form>
+
+{% if analysis %}
+<h4>Reflection</h4>
+<div class="card">
+  <p>{{ analysis.get("fluid_interpretation", "") }}</p>
+</div>
+
+{% if analysis.get("tags") %}
+<h4>Noteworthy Topics</h4>
+<div class="card">
+  <ul>
+    {% for category, values in analysis.tags.items() %}
+    <li>
+      <strong>{{ category.replace("_", " ").title() }}:</strong>
+      {{ values | join(", ") }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %} {% if analysis.get("reflective_questions") %}
+<h4>Contemplations</h4>
+<div class="card">
+  <ul>
+    {% for q in analysis.reflective_questions %}
+    <li>{{ q }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %} {% endif %} {% endblock %}

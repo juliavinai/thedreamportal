@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Dream Reflection{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="ascii-wrap" aria-hidden="true">
+        <pre class="ascii-portal">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⣃⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣂⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡞⣿⡷⣳⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠀⠀
+⠀⠠⢧⠀⠀⠀⠀⢀⣀⣴⣶⣿⣻⣿⣧⣼⣿⣻⣿⣶⣦⡄⡀⠀⠀⠀⠀⣾⠄⠀
+⠠⢾⣻⡷⠀⣠⣾⣿⣿⡿⡿⠿⢿⣿⣽⣫⣿⡿⠿⢿⢿⣿⣷⣷⣤⡀⢾⣿⡷⠀
+⣠⣬⣿⣥⣾⣿⠟⠛⠁⠁⠀⠀⠀⠀⠙⠋⠀⠀⠀⠀⠀⠀⠘⠻⣿⣷⣤⣿⣤⣤
+⠉⣿⣽⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⣿⣿⣽⣏⠉
+⠀⠘⡹⡿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⢿⣷⠃⠀
+⠀⢸⣥⣻⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣱⣏⣽⠇⠀
+⠀⠐⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣿⣿⡿⠂⠀
+⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣻⢷⡀⠀
+ ⠸⣯⣧⣼⡆   <span class="portal-title">the dream portal</span>   ⢸⢣⣴⣽⠇⠀
+⠀⢈⠯⢉⡺⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢗⢉⠩⡁⠀
+⠀⢰⢻⣿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⣿⡟⠅⠀
+⠀⢰⣟⣝⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⣫⣿⠃⠀
+⠀⠠⡿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⣽⢿⠄⠀
+⠀⢾⢾⠇⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣺⠸⡶⢷⠀
+⠀⡾⣇⢘⢏⣧⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡱⣂⢹⢣⠀
+⢸⣎⣺⣹⢔⠋⣲⢶⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡶⣖⠈⣡⣟⣗⣰⡆
+⠈⡎⡿⣊⣚⡟⣾⡞⢧⡤⣄⠀⠀⠀⠀⠀⠀⠀⠀⡠⢤⡬⠳⣷⢻⣛⣘⢻⢱⠁
+⠀⠑⠱⠿⠅⠗⠴⠱⣶⣴⠞⣱⢆⢂⠀⡠⡐⡰⣶⡻⣢⣶⠮⠯⠺⠐⠷⠮⠚⠀
+        </pre>
+      </div>
+      <!--   <nav class="site-nav">༒︎<a href="{{ url_for('index') }}">Home</a>༒︎</nav>-->
+    </header>
+
+    <main class="site-main">{% block content %}{% endblock %}</main>
+
+    <footer class="site-footer">
+      <p class="muted">
+        Dream Portal is for entertainment purposes only. It does not offer
+        medical or therapeutic advice.
+      </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
