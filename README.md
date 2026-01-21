@@ -15,7 +15,7 @@ It is an ongoing personal project with many iterations to come. I have been usin
 - Python
 - any web browser (it runs using flask on your loopback address)
 
-## How to Run
+## Instructions to Run
 
 1. Clone the repository
 2. Install dependencies
