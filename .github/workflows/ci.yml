@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show current branch and recent commits
+        run: |
+          echo "Branch: $GITHUB_REF"
+          git --no-pager log -5 --oneline
+
+      - name: List files
+        run: |
+          ls -la
