@@ -3,6 +3,9 @@
 This is a simple web app that accepts a dream description and returns
 a reflective interpretation using generative AI.
 
+<img src="images/dream.png" alt="Dream journal app screenshot" width="70%" />
+
+
 ## Purpose
 
 It is an ongoing personal project with many iterations to come. I have been using generative AI as a reflection tool for a while due to its innate ability to recognize patterns, access mythic structures, and mirror our own language back to us. So, I wanted to start building a mini app to merge my personal interests with my technical education.
@@ -14,6 +17,7 @@ It is an ongoing personal project with many iterations to come. I have been usin
 - any web browser (it runs using flask on your loopback address)
 
 ## How to Run This App
+
 1. Clone the repository
 2. Install dependencies
 3. Set your `OPENAI_API_KEY`as an environment variable
