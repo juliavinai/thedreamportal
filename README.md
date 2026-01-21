@@ -25,14 +25,7 @@ It is an ongoing personal project with many iterations to come. I have been usin
 5. copy and paste the address and port into the browser
 6. play!
 
-## The Future of this project
-
-- expand UI/UX
-- store dreams
-- create journal function
-- find patterns in reoccuring themes
-
-  ## Future Improvements
+## Future Improvements
 
 - Improve and expand on UI/UX
 - Add a feature which will store past dreams
