@@ -1,8 +1,6 @@
 from textwrap import dedent
 from openai import OpenAI
 
-
-from openai import OpenAI
 client = OpenAI()  # reads from OPENAI_API_KEY environment variable
 MODEL = "gpt-4o-mini"   # swap to which ever model you want to use with your API key - I use this to save $ while testing functionality 
 
